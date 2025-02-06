@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste des établissements{% endblock %}
+
+{% block body %}
+    <h1>Liste des établissements</h1>
+    <ul>
+        {% for etablissement in etablissements %}
+            <li>{{ etablissement.nom }} - {{ etablissement.ville }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
